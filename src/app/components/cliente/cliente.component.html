@@ -1,0 +1,42 @@
+<p>Cliente</p>
+<p>Usuario: {{usuario}}</p>
+<!--<a style="margin-left:50px;" [routerLink] = "['/administrador/{{usuario}}/']">Volver</a>-->
+<a style="margin-left:50px;" href = "/administrador/{{usuario}}/">Volver</a>
+
+<div style="width: 500px; margin-left: 50px;">
+    <form [formGroup]="form" (submit)="buscarCliente()">
+        <div style="width:200px;">
+            <div class="mb-3">
+                <label class="form-label">Cedula de cliente </label>
+                <input type="text" formControlName="cedula" class="form-control" >
+            </div>
+            <button class="btn btn-primary" type="">Buscar</button>
+        </div>
+        <div>
+            <p>{{sms}}</p>
+        </div>
+    </form>
+    <form [formGroup]='form' (submit)="generarUsurioCliente()">
+        <div style="width:400px; margin-top:20px;">
+            <label for="">Nombre: {{nombre}}</label>
+            <br>
+            <label for="">Apellido: {{apellido}}</label>
+            <br>
+            <label for="">Correo: {{correo}}</label>
+            <br>
+            <label for="">Dirección: {{direccion}}</label>
+            <br>
+            <h5>Usuario</h5>
+            <br>
+            <label for="">Usuario: {{correo}}</label>
+            <br>
+            <label for="">Estado: {{estado}}</label>
+            <br>
+            <button class="btn btn-primary">Generar usuario</button>
+        </div>
+    </form>
+    <br>
+    <form [formGroup]='form' (submit)='anular()'>
+        <button class="btn btn-secondary">Anular usuario</button>
+    </form>
+</div>

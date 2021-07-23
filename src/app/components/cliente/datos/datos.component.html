@@ -1,0 +1,16 @@
+<p>Usuario: {{usuario}}</p>
+<form FormGroup = 'formu' (submit)="update()">
+    <label for="">Codigo</label>
+    <br>
+    <input type="number" name="id" value="{{id}}" readonly style="width: 50px;"/>
+    <br>
+    <label for="">Usuario/correo</label>
+    <br>
+    <input type="text" name="nombre" value="{{nombre}}" readonly style="width: 250px;"/>
+    <br>
+    <label for="">Nueva contraseña</label>
+    <br>
+    <input type="password" name="password" value="{{password}}">
+    <br>
+    <button>Actualizar</button>
+</form>

@@ -7,7 +7,8 @@ import { Injectable } from '@angular/core';
 
 export class ClienteService {
 
-  url:string ="http://localhost:8080";
+  //url:string ="http://localhost:8080";
+  url:string ="http://18.191.0.102:8080";
   constructor(private http: HttpClient) { }
 
   public getCliente(cedula:string){

@@ -58,8 +58,8 @@ export class UsuarioComponent implements OnInit {
     console.log(nomb, password);
     
     
-    //this.WsJeeServiceService.post("http://18.191.0.102:8080/gestionbodega/rest/usuario/login",
-    this.WsJeeServiceService.post("http://localhost:8080/gestionbodega/rest/usuario/login",
+    this.WsJeeServiceService.post("http://18.191.0.102:8080/gestionbodega/rest/usuario/login",
+    //this.WsJeeServiceService.post("http://localhost:8080/gestionbodega/rest/usuario/login",
       this.formLogin.value)
       .subscribe((res: any) => {
         console.log("dato: ",res);

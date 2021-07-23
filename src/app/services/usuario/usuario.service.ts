@@ -9,7 +9,8 @@ export class UsuarioService {
   url:string;
 
   constructor(private http: HttpClient) {
-    this.url ="http://localhost:8080";
+    //this.url ="http://localhost:8080";
+    this.url ="http://18.191.0.102:8080";
   }
 
   public getUsuario(usuario:string){
